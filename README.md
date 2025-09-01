@@ -1,26 +1,27 @@
-TGC (Telegram Group Checker)
+💫 TGC – Telegram Group Checker
 
-A Python GUI tool to check user membership and recent messages in Telegram groups. Requires Telegram API credentials and login. Supports multiple languages, dark/light themes, and session management using Telethon and ttkbootstrap.
+A powerful Python GUI tool to check user membership and recent messages in Telegram groups.
+Requires Telegram API credentials and login. Multi-language, dark/light themes, and session management included.
 
-Features
+⚡ Features
 
-Connect to Telegram using API ID and API Hash
+🔌 Connect to Telegram using API ID & API Hash
 
-Login with phone number and two-factor authentication (2FA) if enabled
+📱 Login with phone number & 2FA if enabled
 
-Load a list of group IDs from a text file
+📂 Load group IDs from a text file
 
-Search for a target user in multiple groups
+🔍 Search a target user across multiple groups
 
-Display if the user is a member and their last messages
+💬 Show last messages from the user
 
-Multi-language support: English, Persian, Chinese, German
+🌐 Multi-language support: English, Persian, Chinese, German
 
-Dark/light theme toggle
+🌙 Toggle Dark/Light theme
 
-Persistent session management with a dynamic session file
+💾 Persistent session management with a dynamic session file
 
-Requirements
+🛠 Requirements
 
 Python 3.10+
 
@@ -28,11 +29,11 @@ Telethon
 
 ttkbootstrap
 
-Install dependencies with:
+Install dependencies:
 
-pip install telethon ttkbootstrap
+`pip install telethon ttkbootstrap`
 
-Getting Started
+🚀 Getting Started
 
 Clone the repository:
 
@@ -45,63 +46,50 @@ Run the GUI:
 `python main.py`
 
 
-Enter your Telegram credentials:
+Login with Telegram:
 
-API ID and API Hash (from my.telegram.org
-)
+Enter your API ID & API Hash
 
-Phone number
+Enter your phone number
 
-Verification code sent to your account
+Type the verification code
 
-2FA password if enabled
+Enter 2FA password if enabled
 
-Select a group file (a .txt file with one group ID per line)
+Select a group file (.txt with one group ID per line)
 
-Enter the target username/ID
+Enter target username/ID
 
-Start the search to see results in the output box
+Click Start to see results in the output box
 
-Usage Notes
-
-The tool creates a dynamic session file (dynamic_session.session) to persist login sessions
-
-Do not share your session file or API credentials
-
-Limit search queries to avoid FloodWait errors from Telegram
-
-Only the first 1000 participants are checked per group (adjustable in the code)
-
-Supported File Format
-
-The group file should be a simple text file, one group ID per line:
-
+📁 Group File Format
 group1
 group2
 group3
 
-Security Tips
 
-Keep your API ID, API Hash, and session file private
+⚠️ Each line is a group or channel ID.
 
-Do not commit .env or session files to public repositories
+🔐 Security Tips
 
-Use a .gitignore file to ignore temporary or sensitive files:
+Keep your API credentials & session file private
+
+Do not commit .env or dynamic_session.session
+
+Use a .gitignore file:
 
 `dynamic_session.session`
 `.env`
 `__pycache__/`
 
-Languages
+🌍 Languages Supported
 
-The GUI supports:
+English 🇬🇧
 
-English (en)
+Persian 🇮🇷
 
-Persian (fa)
+Chinese 🇨🇳
 
-Chinese (zh)
+German 🇩🇪
 
-German (de)
-
-You can change the language at any time using the dropdown in the main GUI.
+Change language anytime from the GUI dropdown.
