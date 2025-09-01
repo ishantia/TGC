@@ -1,22 +1,22 @@
-🌟TGC – Telegram Group Checker🌟
-A powerful Python GUI tool to check user membership and recent messages in Telegram groups. It requires Telegram API credentials and a login to work. The tool comes with features like multi-language support, dark/light themes, and session management.
+💫 TGC – Telegram Group Checker 💫
+A powerful Python GUI tool to check user membership and recent messages in Telegram groups. Requires Telegram API credentials and login. Multi-language, dark/light themes, and session management included.
 
-✨ Features
-🔌 Telegram API Connection: Connect to Telegram using your API ID and API Hash.
+⚡️ Features
+🔌 Connect to Telegram using API ID & API Hash
 
-📱 Secure Login: Log in securely with your phone number and 2FA if enabled.
+📱 Login with phone number & 2FA if enabled
 
-📂 Group Management: Load group IDs from a text file for easy management.
+📂 Load group IDs from a text file
 
-🔍 User Search: Search for a target user across multiple groups.
+🔍 Search a target user across multiple groups
 
-💬 Message History: See the last messages from the target user.
+💬 Show last messages from the user
 
-🌐 Multi-language Support: Use the app in English 🇬🇧, Persian 🇮🇷, Chinese 🇨🇳, or German 🇩🇪.
+🌐 Multi-language support: English 🇬🇧, Persian 🇮🇷, Chinese 🇨🇳, German 🇩🇪
 
-🌙 Themes: Toggle between Dark and Light themes.
+🌙 Toggle Dark/Light theme
 
-💾 Persistent Sessions: The app uses dynamic session files to remember your login.
+💾 Persistent session management with a dynamic session file
 
 🛠 Requirements
 Python 3.10+
@@ -25,51 +25,53 @@ Telethon
 
 ttkbootstrap
 
-To install the necessary dependencies, run the following command:
-
-Bash
+Install dependencies:
 
 pip install telethon ttkbootstrap
 🚀 Getting Started
 Clone the repository:
-
-Bash
-
 git clone https://github.com/ishantia/TGC.git
 cd TGC
-Run the application:
-
-Bash
-
+Run the GUI:
 python main.py
-How to Use:
-Enter your API ID and API Hash.
+Login with Telegram:
+Enter your API ID & API Hash
 
-Enter your phone number and the verification code you receive.
+Enter your phone number
 
-Enter your 2FA password if you have one.
+Type the verification code
 
-Select a group file (.txt with one group ID per line).
+Enter 2FA password if enabled
 
-Enter the target username or ID.
+Select a group file (.txt with one group ID per line)
 
-Click "Start" to see the results in the output box.
+Enter target username/ID
+
+Click Start to see results in the output box
 
 📁 Group File Format
-Make sure your text file has one group or channel ID per line:
-
 group1
 group2
 group3
-⚠️ Each line must contain a valid group or channel ID.
+⚠️ Each line is a group or channel ID.
 
 🔐 Security Tips
-Keep your API credentials and session file private.
+Keep your API credentials & session file private
 
-DO NOT commit your .env or dynamic_session.session file to your repository.
+Do not commit .env or dynamic_session.session
 
-Use a .gitignore file to prevent this:
+Use a .gitignore file:
 
 dynamic_session.session
 .env
 __pycache__/
+🌍 Languages Supported
+English 🇬🇧
+
+Persian 🇮🇷
+
+Chinese 🇨🇳
+
+German 🇩🇪
+
+Change language anytime from the GUI dropdown.
