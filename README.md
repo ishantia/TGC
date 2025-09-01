@@ -36,13 +36,13 @@ Getting Started
 
 Clone the repository:
 
-git clone https://github.com/ishantia/TGC.git
+`git clone https://github.com/ishantia/TGC.git`
 cd TGC
 
 
 Run the GUI:
 
-python main.py
+`python main.py`
 
 
 Enter your Telegram credentials:
@@ -88,9 +88,9 @@ Do not commit .env or session files to public repositories
 
 Use a .gitignore file to ignore temporary or sensitive files:
 
-dynamic_session.session
-.env
-__pycache__/
+`dynamic_session.session`
+`.env`
+`__pycache__/`
 
 Languages
 
@@ -105,8 +105,3 @@ Chinese (zh)
 German (de)
 
 You can change the language at any time using the dropdown in the main GUI.
-
-License
-
-MIT License – see LICENSE
- for details
