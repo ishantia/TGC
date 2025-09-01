@@ -28,6 +28,7 @@ ttkbootstrap
 Install dependencies:
 
 pip install telethon ttkbootstrap
+
 🚀 Getting Started
 Clone the repository:
 git clone https://github.com/ishantia/TGC.git
@@ -65,6 +66,7 @@ Use a .gitignore file:
 dynamic_session.session
 .env
 __pycache__/
+
 🌍 Languages Supported
 English 🇬🇧
 
