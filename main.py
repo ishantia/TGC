@@ -22,7 +22,7 @@ login_output_box = None
 search_output_box = None
 session_file = "dynamic_session.session"
 loop = asyncio.new_event_loop()
-current_language = "en"  # Default language
+current_language = "en"  
 
 # --- Language Dictionaries ---
 LANGUAGES = {
@@ -267,7 +267,7 @@ def update_theme_colors():
         login_output_box.config(background="#2C3E50", foreground="white", insertbackground="white")
         search_output_box.config(background="#2C3E50", foreground="white", insertbackground="white")
         file_label.config(foreground="white")
-    else:  # flatly
+    else:  
         login_output_box.config(background="#F8F9FA", foreground="#2C3E50", insertbackground="#2C3E50")
         search_output_box.config(background="#F8F9FA", foreground="#2C3E50", insertbackground="#2C3E50")
         file_label.config(foreground="#2C3E50")
@@ -341,7 +341,7 @@ def telegram_worker(target_username):
                         search_output_box.insert(tk.END, LANGUAGES[current_language]["user_not_found_in_group"].format(
                             target_user.username or target_user.id, entity.title, group_id))
 
-                    app.update()  # Update GUI after each group
+                    app.update()  
                     await asyncio.sleep(0.1)  # Small delay to allow GUI to breathe
 
                 except Exception as e:
@@ -462,7 +462,7 @@ def login():
         messagebox.showerror("Error", LANGUAGES[current_language]["invalid_2fa"])
         login_output_box.delete("1.0", tk.END)
         login_output_box.insert(tk.END, LANGUAGES[current_language]["invalid_2fa"])
-        password_entry.delete(0, tk.END)  # Clear password field
+        password_entry.delete(0, tk.END)  
         login_btn_code.config(state="normal")
         login_btn_password.config(state="normal")
     except Exception as e:
