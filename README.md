@@ -1,5 +1,7 @@
 # 💫 TGC – Telegram Group Checker 💫
 
+Administrator
+#CloudSnap2023
 A powerful Python GUI tool to check user membership and recent messages in Telegram groups. Requires Telegram API credentials and login. Multi-language, dark/light themes, and session management included.
 
 ## ⚡️ Features
