@@ -134,15 +134,19 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments & Credentials
 .env
 .envrc
 .venv
+config.json
+dynamic_session.session
+dynamic_session.session-journal
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+*.json
 
 # Spyder project settings
 .spyderproject
